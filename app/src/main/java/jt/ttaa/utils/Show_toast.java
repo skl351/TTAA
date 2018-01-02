@@ -10,8 +10,10 @@ public class Show_toast {
     // 构造方法私有化 不允许new对象
     private Show_toast() {
     }
+
     // Toast对象
     private static Toast toast = null;
+
     /**
      * 显示Toast
      */

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomTitlebar">
+        <attr name="Titlebar_left" format="reference"/>
+        <attr name="Titlebar_center" format="string"/>
+        <attr name="Titlebar_right" format="reference"/>
+    </declare-styleable>
+</resources>
