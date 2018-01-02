@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:lar="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+
+
+    <jt.ttaa.customview.CustomTitlebar
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        lar:Titlebar_right="@mipmap/ic_launcher"
+        lar:Titlebar_center="测dsfsdfsdfsddddddddfsd试"
+        lar:Titlebar_left="@mipmap/ic_launcher_round"
+        ></jt.ttaa.customview.CustomTitlebar>
+
+    <WebView
+        android:layout_below="@id/top"
+        android:id="@+id/webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+    <ProgressBar
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="10dp"
+        android:id="@+id/fragment_statistics_progressbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:max="100"
+        android:progress="0"
+        android:indeterminate="false" />
+</RelativeLayout>

@@ -43,13 +43,13 @@ public class CustomTitlebar extends RelativeLayout {
             int attr = ta.getIndex(i);
             switch (attr) {
                 case R.styleable.CustomTitlebar_Titlebar_left:
-                    int b = ta.getResourceId(n,R.mipmap.ic_launcher);
+                    int b = ta.getResourceId(attr,R.mipmap.ic_launcher);
                     Titlebar_left.setVisibility(VISIBLE);
                     ImageView img = Titlebar_left.findViewById(R.id.Title_left_nei);
                     img.setImageResource(b);
                     break;
                 case R.styleable.CustomTitlebar_Titlebar_center:
-                    String z = ta.getString(n);
+                    String z = ta.getString(attr);
                     if (z == null || z.length() <= 0) {
                         Titlebar_center.setVisibility(GONE);
                     } else {
@@ -58,7 +58,7 @@ public class CustomTitlebar extends RelativeLayout {
                     }
                     break;
                 case R.styleable.CustomTitlebar_Titlebar_right:
-                    int v = ta.getResourceId(n,R.mipmap.ic_launcher);
+                    int v = ta.getResourceId(attr,R.mipmap.ic_launcher);
                     Titlebar_right.setVisibility(VISIBLE);
                     ImageView img2 = Titlebar_right.findViewById(R.id.Titlebar_right_nei);
                     img2.setImageResource(v);

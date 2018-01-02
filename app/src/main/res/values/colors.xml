@@ -9,5 +9,7 @@
     <color name="default_textColor">#4e4e4e</color>
     <color name="red_left">#5bb53b</color>
     <color name="red_right">#5bb53b</color>
+    <color name="select_pot">#ff4845</color>
+    <color name="unselect_pot">#FFFFFF</color>
 
 </resources>

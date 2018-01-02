@@ -9,7 +9,6 @@
         android:layout_width="100px"
         android:layout_height="100px">
         <ImageView
-            android:background="@color/white"
             android:id="@+id/Title_left_nei"
            android:layout_centerInParent="true"
             android:layout_width="@dimen/title_img_size"

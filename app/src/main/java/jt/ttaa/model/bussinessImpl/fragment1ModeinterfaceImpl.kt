@@ -24,6 +24,7 @@ class fragment1ModeinterfaceImpl : fragment1ModeInterface {
                     }
 
                     override fun onError(e: Throwable) {
+                        System.out.println("error"+e.toString())
                         val zz = e as ErrorResponse
                         callBack.onFail(zz.Msg)//能都得到解析错误后的信息
                     }

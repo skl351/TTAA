@@ -1,9 +1,9 @@
 package jt.ttaa.view.activity
 
 import android.app.Activity
-import android.content.Intent
 import android.os.Bundle
 import android.support.v4.app.Fragment
+import android.util.DisplayMetrics
 import android.view.View
 import com.zhy.autolayout.AutoLayoutActivity
 import jt.ttaa.R
@@ -54,8 +54,15 @@ class MainActivity : Bottom_view.OnTabSelectedListener, AutoLayoutActivity() {
         TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
     }
 
+    fun init_width(){
+        val outMetrics = DisplayMetrics()
+        window.windowManager.defaultDisplay.getMetrics(outMetrics)
+        Sp.setsrcw(outMetrics.widthPixels)
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        init_width()
         setContentView(R.layout.activity_main)
         Sp.statue = 1//正常-这个操作用来判断被后台杀死后重启的效果
         Sp.statue_mainactivity = 1
